@@ -7,6 +7,8 @@ android {
     namespace 'com.example.book_flight'
     compileSdk 33
 
+    buildFeatures{viewBinding = true}
+
     defaultConfig {
         applicationId "com.example.book_flight"
         minSdk 26
