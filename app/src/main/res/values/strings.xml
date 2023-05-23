@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Book_Flight</string>
+
+
+    <string name="text_LetsFly">Let\'s Fly </string>
+    <string name="text_layout_email">E-mail </string>
+    <string name="text_layout_password">Password </string>
+
+
+
+
+    <string name="image_backgroundSignIn">Blue background</string>
+    <string name="image_worldmap">worldmap background</string>
+    <string name="image_plane_paper">paper plane background</string>
+
+
+
+
+    <string name="checkBox_rememberMe_signup">Remember me </string>
+
+
+
+
+    <string name="button_signup">Sign Up </string>
+    <string name="buttonImage_facebook">Facebook sign in button </string>
+    <string name="buttonImage_twitter">Twitter sign in button </string>
+    <string name="buttonImage_google">Google sign in button </string>
+
+
+
+
+
+
 </resources>
