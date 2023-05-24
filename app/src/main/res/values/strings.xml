@@ -8,17 +8,16 @@
 
 
 
+    <string name="textView_already">Do you have an account?</string>
+    <string name="textView_click_signIn">SIGN IN</string>
+
 
     <string name="image_backgroundSignIn">Blue background</string>
     <string name="image_worldmap">worldmap background</string>
     <string name="image_plane_paper">paper plane background</string>
 
 
-
-
     <string name="checkBox_rememberMe_signup">Remember me </string>
-
-
 
 
     <string name="button_signup">Sign Up </string>
@@ -29,6 +28,19 @@
 
 
 
+
+
+
+
+
+
+    <string name="text_welcome">Welcome</string>
+
+    <string name="textView_dontYou">Don\'t you have an account?</string>
+    <string name="textView_click_signUp">SIGN UP</string>
+
+
+    <string name="button_signIn">Sign In </string>
 
 
 </resources>

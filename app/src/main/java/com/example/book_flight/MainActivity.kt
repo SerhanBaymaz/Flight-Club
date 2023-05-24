@@ -1,5 +1,6 @@
 package com.example.book_flight
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.book_flight.databinding.ActivityMainBinding
@@ -13,6 +14,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+
+        binding.textViewClickSignin.setOnClickListener{
+            val intent = Intent(this,signInActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

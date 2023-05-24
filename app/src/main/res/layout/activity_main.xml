@@ -11,7 +11,9 @@
         android:id="@+id/image_worldmap"
         android:layout_width="325dp"
         android:layout_height="144dp"
+        android:layout_marginBottom="60dp"
         android:contentDescription="@string/image_worldmap"
+        app:layout_constraintBottom_toTopOf="@+id/text_layout_email"
         app:layout_constraintEnd_toEndOf="@+id/image_plane_paper"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,7 +23,7 @@
     <ImageView
         android:id="@+id/image_plane_paper"
         android:layout_width="209dp"
-        android:layout_height="118dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="28dp"
         android:contentDescription="@string/image_plane_paper"
         app:layout_constraintBottom_toBottomOf="@+id/image_worldmap"
@@ -45,9 +47,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_layout_email"
         android:layout_width="291dp"
-        android:layout_height="66dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="24dp"
         android:hint="@string/text_layout_email"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_worldmap">
@@ -63,7 +65,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_layout_password"
         android:layout_width="293dp"
-        android:layout_height="64dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
         android:layout_marginTop="24dp"
         android:hint="@string/text_layout_password"
@@ -110,7 +112,7 @@
         android:id="@+id/button_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="24dp"
         android:text="@string/button_signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -158,5 +160,27 @@
         app:layout_constraintTop_toBottomOf="@+id/button_signup"
         app:srcCompat="@drawable/twitter"
         tools:ignore="ImageContrastCheck,RedundantDescriptionCheck" />
+
+    <TextView
+        android:id="@+id/textView_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/textView_already"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonImage_facebook" />
+
+    <TextView
+        android:id="@+id/textView_click_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/textView_click_signIn"
+        android:textColor="#4A148C"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView_already"
+        app:layout_constraintTop_toBottomOf="@+id/buttonImage_facebook" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
