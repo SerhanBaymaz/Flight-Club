@@ -6,8 +6,6 @@
     <string name="text_layout_email">E-mail </string>
     <string name="text_layout_password">Password </string>
 
-
-
     <string name="textView_already">Do you have an account?</string>
     <string name="textView_click_signIn">SIGN IN</string>
 
@@ -20,18 +18,24 @@
     <string name="checkBox_rememberMe_signup">Remember me </string>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <string name="button_signup">Sign Up </string>
     <string name="buttonImage_facebook">Facebook sign in button </string>
     <string name="buttonImage_twitter">Twitter sign in button </string>
     <string name="buttonImage_google">Google sign in button </string>
-
-
-
-
-
-
-
-
 
 
     <string name="text_welcome">Welcome</string>
@@ -41,6 +45,48 @@
 
 
     <string name="button_signIn">Sign In </string>
+
+
+
+
+
+
+
+    <string name="image_takeoff_home">Takeoff plane</string>
+
+    <string name="button_roundtrip_home">Round trip </string>
+    <string name="button_oneway_home">One Way </string>
+    <string name="button_searchflt_home">Search Flights</string>
+    <string name="button_pick_date">Pick Date</string>
+
+
+    <string name="textView_departure_home">Departure From </string>
+    <string name="textView_arrival_home">Arrival At </string>
+    <string name="textView_pick_date">Date </string>
+
+
+    <string name="menu_seatclass_home">Seat</string>
+    <string name="menu_travellers_home">Passenger</string>
+
+
+
+
+    <string-array name="seatclass">
+        <item>Economy</item>
+        <item>Business</item>
+        <item>First Class</item>
+        <item>VIP</item>
+    </string-array>
+
+    <string-array name="passengers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
 
 
 </resources>

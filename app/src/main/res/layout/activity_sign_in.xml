@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".signInActivity">
+
+    <ImageView
+        android:id="@+id/image_worldmap_signin"
+        android:layout_width="325dp"
+        android:layout_height="144dp"
+        android:contentDescription="@string/image_worldmap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/worldmap"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="@string/text_welcome"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_worldmap_signin"
+        app:layout_constraintEnd_toEndOf="@+id/image_worldmap_signin"
+        app:layout_constraintStart_toStartOf="@+id/image_worldmap_signin"
+        app:layout_constraintTop_toTopOf="@+id/image_worldmap_signin" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout_email"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/text_layout_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_worldmap_signin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout_password"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/text_layout_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_layout_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <CheckBox
+        android:id="@+id/checkBox_rememberMe_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/checkBox_rememberMe_signup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_layout_password" />
+
+
+    <Button
+        android:id="@+id/button_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/button_signIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_rememberMe_signup" />
+
+
+    <ImageButton
+        android:id="@+id/buttonImage_google"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="@string/buttonImage_google"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/buttonImage_facebook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_signIn"
+        app:srcCompat="@drawable/google"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageButton
+        android:id="@+id/buttonImage_facebook"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:contentDescription="@string/buttonImage_facebook"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_signIn"
+        app:srcCompat="@drawable/facebook"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageButton
+        android:id="@+id/buttonImage_Twitter"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:contentDescription="@string/buttonImage_twitter"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonImage_facebook"
+        app:layout_constraintTop_toBottomOf="@+id/button_signIn"
+        app:srcCompat="@drawable/twitter"
+        tools:ignore="ImageContrastCheck,RedundantDescriptionCheck" />
+
+
+    <TextView
+        android:id="@+id/textView_dontYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/textView_dontYou"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonImage_facebook" />
+
+    <TextView
+        android:id="@+id/textView_click_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/textView_click_signUp"
+        android:textColor="#4A148C"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView_dontYou"
+        app:layout_constraintTop_toBottomOf="@+id/buttonImage_facebook" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
