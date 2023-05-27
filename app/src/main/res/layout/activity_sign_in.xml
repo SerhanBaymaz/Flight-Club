@@ -56,12 +56,14 @@
         android:layout_marginTop="24dp"
         android:hint="@string/text_layout_password"
         app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleEnabled="true"
         app:layout_constraintTop_toBottomOf="@+id/text_layout_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_input_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -83,6 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/button_signIn"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox_rememberMe_signup" />
@@ -153,6 +156,18 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView_dontYou"
         app:layout_constraintTop_toBottomOf="@+id/buttonImage_facebook" />
+
+    <TextView
+        android:id="@+id/textView_forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_forgotPassword"
+        android:textColor="#4A148B"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_signIn"
+        app:layout_constraintTop_toBottomOf="@+id/button_signIn"
+        tools:ignore="TextContrastCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

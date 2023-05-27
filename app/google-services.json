@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "844644623872",
+    "project_id": "bookflight-409c1",
+    "storage_bucket": "bookflight-409c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844644623872:android:194093e43271fdc2fb5ae5",
+        "android_client_info": {
+          "package_name": "com.example.book_flight"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlZ8GXILCnN0BKLL7doxOjfvfLCIQ06E4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
