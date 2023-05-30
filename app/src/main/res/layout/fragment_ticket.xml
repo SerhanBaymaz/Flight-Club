@@ -1,14 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.TicketFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/main_background">
 
+
+        <TextView
+            android:id="@+id/textView_departure_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="@string/textView_departure_home"
+            app:layout_constraintBottom_toTopOf="@+id/text_departure_iata_home"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_departure_sticker_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/text_departure_fullname_home"
+            app:layout_constraintEnd_toStartOf="@+id/text_departure_iata_home"
+            app:layout_constraintTop_toBottomOf="@+id/textView_departure_home"
+            app:srcCompat="@drawable/departure_sticker"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/text_departure_iata_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/bgg"
+            android:textColor="#01579B"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_departure_home"
+            app:layout_constraintStart_toStartOf="@+id/textView_departure_home"
+            app:layout_constraintTop_toBottomOf="@+id/textView_departure_home" />
+
+        <TextView
+            android:id="@+id/text_departure_fullname_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="@string/bingol_tr"
+            android:textColor="#545454"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_departure_iata_home"
+            app:layout_constraintStart_toStartOf="@+id/text_departure_iata_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_departure_iata_home" />
+
+        <TextView
+            android:id="@+id/textView_arrival_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="@string/textView_arrival_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_arrival_sticker_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/text_arrival_iata_home"
+            app:layout_constraintTop_toTopOf="@+id/image_departure_sticker_home"
+            app:srcCompat="@drawable/arrival_sticker"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/text_arrival_iata_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/ayt"
+            android:textColor="#01579B"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_arrival_home"
+            app:layout_constraintStart_toStartOf="@+id/textView_arrival_home"
+            app:layout_constraintTop_toBottomOf="@+id/textView_arrival_home" />
+
+        <TextView
+            android:id="@+id/text_arrival_fullname_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="@string/antalya_tr"
+            android:textColor="#545454"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_arrival_iata_home"
+            app:layout_constraintStart_toStartOf="@+id/text_arrival_iata_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_arrival_iata_home" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="@string/to"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_arrival_fullname_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_arrival_home" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

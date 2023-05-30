@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOutActivity">
+
+    <ImageView
+        android:id="@+id/imageView_phone"
+        android:layout_width="145dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginBottom="800dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/payment_phone"
+        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/textView_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/payment"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLayout_cardnumber"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_payment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_cardnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/card_number"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLayout_name_payment"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLayout_cardnumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_name_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLayout_surname_payment"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLayout_name_payment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_surname_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/surname"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/editTextNumber_cvv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/cvv"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/textLayout_surname_payment"
+        app:layout_constraintStart_toStartOf="@+id/textView_payment"
+        app:layout_constraintTop_toBottomOf="@+id/textLayout_surname_payment"
+        tools:ignore="Autofill,TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editText_expire_date"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/expire_date"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/textView_payment"
+        app:layout_constraintStart_toStartOf="@+id/textLayout_surname_payment"
+        app:layout_constraintTop_toBottomOf="@+id/textLayout_surname_payment"
+        tools:ignore="Autofill,TextContrastCheck,TextFields" />
+
+    <Button
+        android:id="@+id/button_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/confirm_pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_expire_date" />
+
+    <TextView
+        android:id="@+id/textView_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/total"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textLayout_cardnumber"
+        app:layout_constraintEnd_toStartOf="@+id/textView_payment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

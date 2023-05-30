@@ -84,6 +84,18 @@
     <string name="phone">Phone</string>
     <string name="change_password">Change Password</string>
     <string name="confirm_changes">Confirm Changes</string>
+    <string name="bgg">BGG</string>
+    <string name="bingol_tr">Bingöl,TR</string>
+    <string name="ayt">AYT</string>
+    <string name="antalya_tr">Antalya,TR</string>
+    <string name="to">To</string>
+    <string name="ticket_summary">Ticket Summary</string>
+    <string name="payment">Payment</string>
+    <string name="card_number">Card Number</string>
+    <string name="cvv">CVV</string>
+    <string name="expire_date">Expire Date</string>
+    <string name="confirm_pay"><![CDATA[Confirm & Pay]]></string>
+    <string name="total">Total :</string>
 
 
 </resources>
