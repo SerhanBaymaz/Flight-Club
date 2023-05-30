@@ -18,7 +18,7 @@ import java.util.Locale
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
-    lateinit var binding : FragmentHomeBinding
+    lateinit var binding: FragmentHomeBinding
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -30,7 +30,14 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val number_of_passengers = resources.getStringArray(R.array.passengers)
 
         val arrayAdapter_seat =
-            activity?.let { ArrayAdapter(it, R.layout.list_item, R.id.textview_seatclasslist, seatclass) }
+            activity?.let {
+                ArrayAdapter(
+                    it,
+                    R.layout.list_item,
+                    R.id.textview_seatclasslist,
+                    seatclass
+                )
+            }
         binding.autoCompleteTextViewSeatclass.setAdapter(arrayAdapter_seat)
 
         val arrayAdapter_passengers = activity?.let {
@@ -53,7 +60,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             updateLable(myCalendar)
         }
 
-        binding.btnDatePicker.setOnClickListener {
+        binding.tvDatePicker.setOnClickListener {
             activity?.let { it1 ->
                 DatePickerDialog(
                     it1, datePicker, myCalendar.get(Calendar.YEAR),
@@ -63,50 +70,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         }
 
 
-    }
+    }//onview method
 
-
-    /*
-    override fun onCreate(savedInstanceState: Bundle?) {
-
-
-        //val abc = arrayOf("a","b","c")
-        val seatclass = resources.getStringArray(R.array.seatclass)
-        val number_of_passengers = resources.getStringArray(R.array.passengers)
-
-        val arrayAdapter_seat =
-            ArrayAdapter(activity, R.layout.list_item, R.id.textview_seatclasslist, seatclass)
-        binding.autoCompleteTextViewSeatclass.setAdapter(arrayAdapter_seat)
-
-        val arrayAdapter_passengers = ArrayAdapter(
-            this,
-            R.layout.list_item,
-            R.id.textview_passengerlist,
-            number_of_passengers
-        )
-        binding.autoCompleteTextViewPassengers.setAdapter(arrayAdapter_passengers)
-
-
-        val myCalendar = Calendar.getInstance()
-
-        val datePicker = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
-            myCalendar.set(Calendar.YEAR, year)
-            myCalendar.set(Calendar.MONTH, month)
-            myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
-            updateLable(myCalendar)
-        }
-
-        binding.btnDatePicker.setOnClickListener {
-            DatePickerDialog(
-                this, datePicker, myCalendar.get(Calendar.YEAR),
-                myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)
-            ).show()
-        }
-
-
-    }//oncreate
-
-*/
 
     fun updateLable(myCalendar: Calendar) {
         val myFormat = "dd-MM-yyyy"

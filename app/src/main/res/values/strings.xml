@@ -77,6 +77,13 @@
     <string name="home_icon">Home</string>
     <string name="air_plane_ticket">Ticket</string>
     <string name="profile_icon">Profile</string>
+    <string name="my_account">My Account</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="identity_number">Identity Number</string>
+    <string name="phone">Phone</string>
+    <string name="change_password">Change Password</string>
+    <string name="confirm_changes">Confirm Changes</string>
 
 
 </resources>

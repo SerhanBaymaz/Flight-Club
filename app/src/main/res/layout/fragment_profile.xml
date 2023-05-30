@@ -1,14 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/main_background"
     tools:context=".fragments.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/main_background">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_art"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/TextView_myAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="@string/my_account"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textLayout_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/textLayout_idendity"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textLayout_surname"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textLayout_idendity"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/surname"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textLayout_idendity"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLayout_surname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_identity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/identity_number"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textLayout_phone"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLayout_idendity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textLayout_email"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLayout_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/e_mail"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textDatePicker"
+            android:layout_width="92dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/quicksand_light"
+            android:text="@string/textView_pick_date"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toStartOf="@+id/ic_man"
+            app:layout_constraintStart_toStartOf="@+id/textLayout_email"
+            app:layout_constraintTop_toBottomOf="@+id/textLayout_email"
+            tools:ignore="TextSizeCheck" />
+
+        <Switch
+            android:id="@+id/switch_man_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.71"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLayout_email"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <ImageView
+            android:id="@+id/ic_man"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_man"
+            app:layout_constraintEnd_toStartOf="@+id/switch_man_women"
+            app:layout_constraintTop_toTopOf="@+id/switch_man_women"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/ic_woman"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_woman"
+            app:layout_constraintStart_toEndOf="@+id/switch_man_women"
+            app:layout_constraintTop_toTopOf="@+id/switch_man_women"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textLayout_password"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ic_man"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_passwordProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/change_password"
+                android:inputType="textPassword"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/confirm_changes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLayout_password" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
