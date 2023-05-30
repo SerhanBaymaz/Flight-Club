@@ -19,20 +19,6 @@
     <string name="checkBox_rememberMe_signup">Remember me </string>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <string name="button_signup">Sign Up </string>
     <string name="buttonImage_facebook">Facebook sign in button </string>
     <string name="buttonImage_twitter">Twitter sign in button </string>
@@ -46,11 +32,6 @@
 
 
     <string name="button_signIn">Sign In </string>
-
-
-
-
-
 
 
     <string name="image_takeoff_home">Takeoff plane</string>
@@ -91,6 +72,11 @@
         <item>6</item>
         <item>7</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_icon">Home</string>
+    <string name="air_plane_ticket">Ticket</string>
+    <string name="profile_icon">Profile</string>
 
 
 </resources>
