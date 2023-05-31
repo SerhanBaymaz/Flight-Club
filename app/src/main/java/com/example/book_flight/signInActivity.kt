@@ -43,6 +43,15 @@ class signInActivity : AppCompatActivity() {
         val password = binding.textInputPassword.text.toString()
 
 
+        if (email.isEmpty()){
+            binding.textInputEmail.error = "E-mail cannot be empty"
+        }
+
+        if (password.isEmpty()){
+            binding.textInputPassword.error = "Password cannot be empty"
+        }
+
+
         if (email.isNotEmpty() && password.isNotEmpty()) {
             firebaseAuth = FirebaseAuth.getInstance()
 

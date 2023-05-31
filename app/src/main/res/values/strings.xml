@@ -96,6 +96,16 @@
     <string name="expire_date">Expire Date</string>
     <string name="confirm_pay"><![CDATA[Confirm & Pay]]></string>
     <string name="total">Total :</string>
+    <string name="_18_aug_2023">18 Aug 2023</string>
+    <string name="_09_45">09:45</string>
+    <string name="flight_time">Flight Time:</string>
+    <string name="_12_00">12:00</string>
+    <string name="pnr">PNR:</string>
+    <string name="seat">Seat:</string>
+    <string name="_02_15">02:15</string>
+    <string name="f445sf">F445SF</string>
+    <string name="_2c">2C</string>
+    <string name="_1996">1996$</string>
 
 
 </resources>

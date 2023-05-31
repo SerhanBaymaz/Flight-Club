@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketSummaryActivity">
+
+    <TextView
+        android:id="@+id/textView_ticket_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/ticket_summary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_ticketpeople"
+        android:layout_width="409dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ticket_summary"
+        app:srcCompat="@drawable/ticket_people"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/textView_departure_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/textView_departure_home"
+        android:textColor="#880E4F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView_ticket_summary"
+        app:layout_constraintTop_toTopOf="@+id/text_departure_iata_home" />
+
+    <ImageView
+        android:id="@+id/image_departure_sticker_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textdata_departure_day"
+        app:layout_constraintEnd_toStartOf="@+id/textView_departure_home"
+        app:layout_constraintTop_toTopOf="@+id/textView_departure_home"
+        app:srcCompat="@drawable/departure_sticker"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/text_departure_iata_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="83dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="@string/bgg"
+        android:textColor="#01579B"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_ticketpeople" />
+
+    <TextView
+        android:id="@+id/text_departure_fullname_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/bingol_tr"
+        android:textColor="#545454"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_departure_iata_home"
+        app:layout_constraintStart_toStartOf="@+id/text_departure_iata_home"
+        app:layout_constraintTop_toBottomOf="@+id/text_departure_iata_home" />
+
+    <TextView
+        android:id="@+id/textView_arrival_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/textView_arrival_home"
+        android:textColor="#880E4F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_departure_home"
+        app:layout_constraintStart_toStartOf="@+id/textView_departure_home"
+        app:layout_constraintTop_toTopOf="@+id/text_arrival_iata_home" />
+
+    <ImageView
+        android:id="@+id/image_arrival_sticker_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textdata_arrival_day"
+        app:layout_constraintEnd_toStartOf="@+id/textView_arrival_home"
+        app:layout_constraintTop_toTopOf="@+id/textView_arrival_home"
+        app:srcCompat="@drawable/arrival_sticker"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/text_arrival_iata_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="@string/ayt"
+        android:textColor="#01579B"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_departure_fullname_home" />
+
+    <TextView
+        android:id="@+id/text_arrival_fullname_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/antalya_tr"
+        android:textColor="#545454"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_arrival_iata_home"
+        app:layout_constraintStart_toStartOf="@+id/text_arrival_iata_home"
+        app:layout_constraintTop_toBottomOf="@+id/text_arrival_iata_home"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textdata_departure_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_18_aug_2023"
+        app:layout_constraintEnd_toEndOf="@+id/textView_departure_home"
+        app:layout_constraintStart_toStartOf="@+id/textView_departure_home"
+        app:layout_constraintTop_toBottomOf="@+id/textView_departure_home" />
+
+    <TextView
+        android:id="@+id/textdata_arrival_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_18_aug_2023"
+        app:layout_constraintEnd_toEndOf="@+id/textView_arrival_home"
+        app:layout_constraintStart_toStartOf="@+id/textView_arrival_home"
+        app:layout_constraintTop_toBottomOf="@+id/textView_arrival_home" />
+
+    <TextView
+        android:id="@+id/textdata_departure_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_09_45"
+        app:layout_constraintEnd_toEndOf="@+id/textdata_departure_day"
+        app:layout_constraintStart_toStartOf="@+id/textdata_departure_day"
+        app:layout_constraintTop_toBottomOf="@+id/textdata_departure_day" />
+
+    <TextView
+        android:id="@+id/textdata_arrival_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_12_00"
+        app:layout_constraintEnd_toEndOf="@+id/textdata_arrival_day"
+        app:layout_constraintStart_toStartOf="@+id/textdata_arrival_day"
+        app:layout_constraintTop_toBottomOf="@+id/textdata_arrival_day" />
+
+    <TextView
+        android:id="@+id/textView_flighttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/flight_time"
+        android:textColor="#4A148C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_arrival_fullname_home" />
+
+    <TextView
+        android:id="@+id/textView_pnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/pnr"
+        android:textColor="#4A148C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_flighttime"
+        app:layout_constraintTop_toBottomOf="@+id/textView_flighttime" />
+
+    <TextView
+        android:id="@+id/textView_seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/seat"
+        android:textColor="#4A148C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textdata_pnr"
+        app:layout_constraintTop_toTopOf="@+id/textView_pnr" />
+
+    <TextView
+        android:id="@+id/textView_total_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/total"
+        android:textColor="#4A148C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_pnr"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pnr" />
+
+    <TextView
+        android:id="@+id/textdata_flighttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_02_15"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_flighttime"
+        app:layout_constraintStart_toEndOf="@+id/textView_flighttime"
+        app:layout_constraintTop_toTopOf="@+id/textView_flighttime" />
+
+    <TextView
+        android:id="@+id/textdata_pnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/f445sf"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_pnr"
+        app:layout_constraintStart_toEndOf="@+id/textView_pnr"
+        app:layout_constraintTop_toTopOf="@+id/textView_pnr" />
+
+    <TextView
+        android:id="@+id/textdata_seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2c"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_seat"
+        app:layout_constraintStart_toEndOf="@+id/textView_seat"
+        app:layout_constraintTop_toTopOf="@+id/textView_seat" />
+
+    <TextView
+        android:id="@+id/textdata_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1996"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_total_summary"
+        app:layout_constraintStart_toEndOf="@+id/textView_total_summary"
+        app:layout_constraintTop_toTopOf="@+id/textView_total_summary" />
+
+    <ImageView
+        android:id="@+id/imagedata_icon_airline"
+        android:layout_width="176dp"
+        android:layout_height="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_departure_iata_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_ticketpeople"
+        app:srcCompat="@drawable/turkish_airlines_logo_wine"
+        tools:ignore="ContentDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
