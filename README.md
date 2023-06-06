@@ -6,6 +6,8 @@ The purpose of this application is to buy a plane ticket and select a seat.
 
 if you can't open the video in Github,  [Click here](https://youtu.be/HEx36lgC00E) for the introduction video of the application.
 
+Also you can see the [Figma](https://www.figma.com/file/bbcdBzqMAEIVD3YcLPLD46/Plane-Ticket-App?type=design&node-id=0%3A1&t=3oU6TjCaOlbDuyXL-1&classId=eb985d81-b044-428c-9b3a-abce714760b6&assignmentId=50448f84-16ff-4c57-9cdd-3ee911fc0380&submissionId=7a1ead5e-ef18-5c26-adc6-1588d88bfee5) link. 
+
 ----
 
 *Sign in and Sign up pages :* 
