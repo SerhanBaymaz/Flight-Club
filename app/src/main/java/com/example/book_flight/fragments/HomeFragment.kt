@@ -1,6 +1,7 @@
 package com.example.book_flight.fragments
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,8 +10,10 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.example.book_flight.R
+import com.example.book_flight.SearchedTicketsActivity
 import com.example.book_flight.databinding.ActivityHomeBinding
 import com.example.book_flight.databinding.FragmentHomeBinding
+import com.example.book_flight.signInActivity
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -67,6 +70,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                     myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)
                 ).show()
             }
+        }
+
+        binding.buttonSearchfltHome.setOnClickListener {
+            val intent = Intent(activity, SearchedTicketsActivity::class.java)
+            startActivity(intent)
         }
 
 

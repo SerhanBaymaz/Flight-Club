@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="120dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="16dp"
+    android:background="@color/design_default_color_secondary_variant"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    tools:ignore="TextSizeCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView_airline"
+            android:layout_width="50dp"
+            android:layout_height="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_airline"
+            app:layout_constraintEnd_toStartOf="@+id/textView_airline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrival_sticker"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView_airline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Turkish Airlines"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView_departure_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="AYT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView_dep_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:45"
+            app:layout_constraintEnd_toEndOf="@+id/textView_departure_ticket"
+            app:layout_constraintStart_toStartOf="@+id/textView_departure_ticket"
+            app:layout_constraintTop_toBottomOf="@+id/textView_departure_ticket"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView_arrvl_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:text="BGG"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView_arrvl_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00"
+            app:layout_constraintEnd_toEndOf="@+id/textView_arrvl_ticket"
+            app:layout_constraintStart_toStartOf="@+id/textView_arrvl_ticket"
+            app:layout_constraintTop_toBottomOf="@+id/textView_arrvl_ticket"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView_total_flight_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2hrs 15 mins"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView_arrvl_ticket"
+            app:layout_constraintStart_toEndOf="@+id/textView_departure_ticket"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="1984"
+            android:textColor="#01579B"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView_try_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₺"
+            android:textColor="#01579B"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_total_amount"
+            tools:ignore="HardcodedText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
