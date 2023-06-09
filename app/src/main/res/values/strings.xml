@@ -118,6 +118,9 @@
     <string name="serhan">SERHAN</string>
     <string name="baymaz">BAYMAZ</string>
     <string name="_12345678912">12345678912</string>
+    <string name="birthday">Birthday</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
 
 
 </resources>
