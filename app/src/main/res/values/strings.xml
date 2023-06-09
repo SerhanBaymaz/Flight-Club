@@ -101,7 +101,7 @@
     <string name="flight_time">Flight Time:</string>
     <string name="_12_00">12:00</string>
     <string name="pnr">PNR:</string>
-    <string name="seat">Seat:</string>
+    <string name="seat">💺Seat:</string>
     <string name="_02_15">02:15</string>
     <string name="f445sf">F445SF</string>
     <string name="_2c">2C</string>
@@ -111,6 +111,13 @@
     <string name="recent_flights">Recent Flights</string>
     <string name="arrival">ARRIVAL</string>
     <string name="departure">DEPARTURE</string>
+    <string name="_1_person">1.Person</string>
+    <string name="surname_dotdot">SURNAME :</string>
+    <string name="identity_no_DOTDOT">IDENTITY NO :</string>
+    <string name="name_dotdot">NAME :</string>
+    <string name="serhan">SERHAN</string>
+    <string name="baymaz">BAYMAZ</string>
+    <string name="_12345678912">12345678912</string>
 
 
 </resources>

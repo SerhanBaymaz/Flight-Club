@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="220dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="16dp"
+    android:background="@color/main_background"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    tools:ignore="TextSizeCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView_personicon"
+            android:layout_width="35dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_header_person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_header_person"
+            app:srcCompat="@drawable/ic_profile"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView_header_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/_1_person"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView_personicon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_seat_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/_2c"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView_header_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="@string/seat"
+            android:textColor="#B71C1C"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_seat_data"
+            app:layout_constraintEnd_toStartOf="@+id/textView_seat_data"
+            app:layout_constraintTop_toTopOf="@+id/textView_seat_data" />
+
+
+        <TextView
+            android:id="@+id/TextView_header_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="@string/name_dotdot"
+            android:textColor="#B71C1C"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/TextView_header_surname"
+            app:layout_constraintStart_toStartOf="@+id/TextView_header_surname" />
+
+        <TextView
+            android:id="@+id/TextView_header_surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="@string/surname_dotdot"
+            android:textColor="#B71C1C"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView_personicon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TextView_header_identittyno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="@string/identity_no_DOTDOT"
+            android:textColor="#B71C1C"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/TextView_header_surname"
+            app:layout_constraintTop_toBottomOf="@+id/TextView_header_surname" />
+
+        <TextView
+            android:id="@+id/textView_name_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/serhan"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TextView_header_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_header_person"
+            app:layout_constraintTop_toTopOf="@+id/TextView_header_name" />
+
+        <TextView
+            android:id="@+id/textView_surname_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/baymaz"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TextView_header_surname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toEndOf="@+id/textView_header_person"
+            app:layout_constraintTop_toTopOf="@+id/TextView_header_surname" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/_12345678912"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toEndOf="@+id/textView_header_person"
+            app:layout_constraintTop_toTopOf="@+id/TextView_header_identittyno" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
