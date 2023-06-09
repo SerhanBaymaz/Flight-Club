@@ -109,6 +109,8 @@
     <string name="pnr_no">PNR no</string>
     <string name="check_in">Check In 💺</string>
     <string name="recent_flights">Recent Flights</string>
+    <string name="arrival">ARRIVAL</string>
+    <string name="departure">DEPARTURE</string>
 
 
 </resources>
