@@ -106,6 +106,9 @@
     <string name="f445sf">F445SF</string>
     <string name="_2c">2C</string>
     <string name="_1996">1996$</string>
+    <string name="pnr_no">PNR no</string>
+    <string name="check_in">Check In 💺</string>
+    <string name="recent_flights">Recent Flights</string>
 
 
 </resources>
