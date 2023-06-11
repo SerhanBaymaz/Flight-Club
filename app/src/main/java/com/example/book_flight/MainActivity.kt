@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
             createUser()
         }
 
-
     }//onCreate method ends
 
     fun createUser() {
