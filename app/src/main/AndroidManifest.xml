@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Book_Flight"
         tools:targetApi="31">
         <activity
+            android:name=".AreYouSureActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchedTicketsActivity"
             android:exported="false" />
         <activity

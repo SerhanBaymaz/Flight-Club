@@ -39,32 +39,6 @@
             app:layout_constraintStart_toEndOf="@+id/imageView_personicon"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView_seat_data"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="12dp"
-            android:fontFamily="@font/quicksand_bold"
-            android:text="@string/_2c"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/textView_header_seat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="6dp"
-            android:fontFamily="@font/quicksand_medium"
-            android:text="@string/seat"
-            android:textColor="#B71C1C"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView_seat_data"
-            app:layout_constraintEnd_toStartOf="@+id/textView_seat_data"
-            app:layout_constraintTop_toTopOf="@+id/textView_seat_data" />
-
 
         <TextView
             android:id="@+id/TextView_header_name"
@@ -130,7 +104,7 @@
             app:layout_constraintTop_toTopOf="@+id/TextView_header_surname" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textView_idno_data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/quicksand_bold"
