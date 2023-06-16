@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() {
         binding.buttonSignup.setOnClickListener {
             createUser()
         }
+
+
+
+
     }//onCreate method ends
 
     fun createUser() {

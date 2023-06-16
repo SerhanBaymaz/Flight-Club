@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Book_Flight</string>
+    <string name="app_name">Flight Club</string>
 
 
     <string name="text_LetsFly">Let\'s Fly </string>
@@ -126,6 +126,7 @@
     <string name="cancel_the_flight">Cancel the flight</string>
     <string name="check_out">Check Out</string>
     <string name="continuebtn">Continue</string>
+    <string name="okey">Okey</string>
 
 
 </resources>

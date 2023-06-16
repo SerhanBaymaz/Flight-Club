@@ -1,5 +1,6 @@
 package com.example.book_flight
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.book_flight.databinding.ActivityTicketSummaryBinding
@@ -14,6 +15,10 @@ class TicketSummaryActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        binding.buttonContinueToMain.setOnClickListener {
+            val intent = Intent(this, Home_activity::class.java)
+            startActivity(intent)
+        }
 
 
     }

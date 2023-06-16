@@ -240,5 +240,15 @@
         app:srcCompat="@drawable/turkish_airlines_logo_wine"
         tools:ignore="ContentDescription" />
 
+    <Button
+        android:id="@+id/button_continue_to_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/okey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textdata_total" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
