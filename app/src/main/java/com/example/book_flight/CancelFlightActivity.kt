@@ -21,6 +21,9 @@ class CancelFlightActivity : AppCompatActivity() {
 
 
         initalizeDumpData()
+        clickCardItem()
+
+
 
     }//onCreate method
 
@@ -46,4 +49,22 @@ class CancelFlightActivity : AppCompatActivity() {
 
     }
 
+    fun clickCardItem(){
+
+        //enable the click the card item.
+        val ticket1 = intent.getParcelableExtra<TicketDataClass>("tickettt")
+
+        if (ticket1 != null){
+            binding.cardTicketSummaryCancelactivity.textViewAirline.text = ticket1.airlineName
+            binding.cardTicketSummaryCancelactivity.imageViewAirline.setImageResource(ticket1.airlineImage)
+
+            binding.cardTicketSummaryCancelactivity.TextViewDepTime.text = ticket1.departureTime
+            binding.cardTicketSummaryCancelactivity.textViewArrTime.text = ticket1.arrivalTime
+
+            binding.cardTicketSummaryCancelactivity.textViewTotalAmountSummary.text = ticket1.totalAmount.toString()
+
+
+        }
+
+    }
 }//class

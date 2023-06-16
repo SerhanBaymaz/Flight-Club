@@ -119,11 +119,13 @@
     <string name="baymaz">BAYMAZ</string>
     <string name="_12345678912">12345678912</string>
     <string name="birthday">Birthday</string>
-    <string name="man">Man</string>
-    <string name="woman">Woman</string>
+    <string name="man">Man 🧍‍♂️</string>
+    <string name="woman">Woman 🧍‍♀️</string>
     <string name="are_you_sure">Are you sure ?</string>
     <string name="i_m_sure">I\'m SURE</string>
     <string name="cancel_the_flight">Cancel the flight</string>
+    <string name="check_out">Check Out</string>
+    <string name="continuebtn">Continue</string>
 
 
 </resources>

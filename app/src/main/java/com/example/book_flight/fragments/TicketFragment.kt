@@ -1,11 +1,13 @@
 package com.example.book_flight.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.book_flight.CancelFlightActivity
 import com.example.book_flight.R
 import com.example.book_flight.TicketAdapter
 import com.example.book_flight.TicketDataClass
@@ -71,6 +73,16 @@ class TicketFragment : Fragment(R.layout.fragment_ticket) {
 
         ticketAdapter = TicketAdapter(ticketList)
         binding.recycylerViewTicketCancellation.adapter = ticketAdapter
+
+
+        ///enable the click card item
+        ticketAdapter.onItemClick = {
+            val intent = Intent(activity, CancelFlightActivity::class.java)
+            intent.putExtra("tickettt",it)
+            startActivity(intent)
+        }
+
+
     }
 
 }

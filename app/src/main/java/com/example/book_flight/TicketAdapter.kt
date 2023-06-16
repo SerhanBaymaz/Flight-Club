@@ -10,6 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 class TicketAdapter(val ticketList:ArrayList<TicketDataClass>) :
     RecyclerView.Adapter<TicketAdapter.TicketViewHolder>() {
 
+
+    //this line is for click the card item.
+    var onItemClick : ((TicketDataClass) -> Unit)? = null
+
     class TicketViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
         val imageViewAirline : ImageView = itemView.findViewById(R.id.imageView_airline)
         val textViewAirline : TextView = itemView.findViewById(R.id.textView_airline)
@@ -42,6 +46,12 @@ class TicketAdapter(val ticketList:ArrayList<TicketDataClass>) :
 
         holder.textViewTotalTime.text = ticket.totalFlightTime
         holder.textViewTotalAmount.text = ticket.totalAmount.toString()
+
+
+        //this line is for click the card item.
+        holder.itemView.setOnClickListener{
+            onItemClick?.invoke(ticket)
+        }
 
 
     }
