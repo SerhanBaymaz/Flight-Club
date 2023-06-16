@@ -1,5 +1,6 @@
 package com.example.book_flight
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.book_flight.databinding.ActivityCheckOutBinding
@@ -18,6 +19,10 @@ class CheckOutActivity : AppCompatActivity() {
 
 
 
+        binding.buttonPay.setOnClickListener {
+            val intent = Intent(this, TicketSummaryActivity::class.java)
+            startActivity(intent)
+        }
 
     }//onCreate method
 

@@ -1,5 +1,6 @@
 package com.example.book_flight
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -66,6 +67,15 @@ class SearchedTicketsActivity : AppCompatActivity() {
 
         ticketAdapter = TicketAdapter(ticketList)
         binding.recycylerViewTicket.adapter = ticketAdapter
+
+
+        ///enable the click card item
+        ticketAdapter.onItemClick = {
+            val intent = Intent(this, PassengerInputinfoActivity::class.java)
+            intent.putExtra("tickett",it)
+            startActivity(intent)
+        }
+
     }
 
 
