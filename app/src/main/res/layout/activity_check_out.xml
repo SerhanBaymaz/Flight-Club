@@ -133,5 +133,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/text_data_payment_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="998₺"
+        android:textColor="#0D47A1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_total"
+        app:layout_constraintStart_toEndOf="@+id/textView_total"
+        app:layout_constraintTop_toTopOf="@+id/textView_total"
+        tools:ignore="HardcodedText" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

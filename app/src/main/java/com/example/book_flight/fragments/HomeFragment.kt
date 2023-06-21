@@ -63,7 +63,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             updateLable(myCalendar)
         }
 
-        binding.tvDatePicker.setOnClickListener {
+        binding.btnDatePicker.setOnClickListener {
             activity?.let { it1 ->
                 DatePickerDialog(
                     it1, datePicker, myCalendar.get(Calendar.YEAR),
