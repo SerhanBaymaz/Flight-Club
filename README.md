@@ -2,6 +2,18 @@
 
 The purpose of this application is to buy a plane ticket and select a seat.
 
+*App Presentation video :*
+
+
+https://github.com/SerhanBaymaz/book_flight/assets/102352030/8f3354d6-1503-4ee7-b2dd-afdcdd4de6a6
+
+if you can't open the video in Github,  [Click here](https://youtu.be/ZmI8f-q2JSU) for the presentation video of the application.
+
+
+
+----
+*Figma Presentation :*
+
 [book_flightApp.webm](https://github.com/SerhanBaymaz/book_flight/assets/102352030/d36239b9-1564-4cdb-8ce2-542010a3b69c)
 
 if you can't open the video in Github,  [Click here](https://youtu.be/HEx36lgC00E) for the introduction video of the application.
